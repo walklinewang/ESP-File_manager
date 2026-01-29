@@ -664,7 +664,7 @@ class WebServer:
 				continue
 
 			ifconfig = wlan.ifconfig()
-			print(f"Web server running at {ifconfig[0]}:{self.__port}")
+			print(f"Web server running at: http://{ifconfig[0]}:{self.__port}")
 
 	def stop(self):
 		if self.__webserv_sock:
